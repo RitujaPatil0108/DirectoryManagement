@@ -1,0 +1,48 @@
+<div class="container">
+  <h2>Business Listings</h2>
+
+  <input type="text" [(ngModel)]="searchQuery" placeholder="Search..." (input)="searchBusinesses()" />
+  <button routerLink="/business-add">Add New Business</button>
+
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th (click)="sortBy('name')">Name</th>
+        <th>Category</th>
+        <th>City</th>
+        <th>Phone</th>
+        <th>Website</th>
+        <th>Rating</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let business of filteredBusinesses">
+        <td>{{ business.businessId }}</td>
+        <td>{{ business.name }}</td>
+        <td>{{ business.category.name }}</td>  
+        <td>{{ business.city }}</td>
+        <td>{{ business.phoneNumber }}</td>
+        <td>{{ business.website }}</td>
+        <td>{{ business.rating }}</td>
+        <td>
+          <button [routerLink]="['/business-form', business.businessId]">Edit</button>
+          <button (click)="deleteBusiness(business.businessId!)">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <div class="pagination">
+      <span>Showing {{ minRecordIndex() }} - {{ maxRecordIndex() }} of {{ businesses.length }} records</span>
+      <button (click)="changePage(currentPage - 1)" [disabled]="currentPage === 1">Previous</button>
+
+      <ng-container *ngFor="let page of [].constructor(totalPages()); let i = index">
+          <button (click)="changePage(i + 1)" [class.active]="currentPage === i + 1">{{ i + 1 }}</button>
+      </ng-container>
+
+      <button (click)="changePage(currentPage + 1)" [disabled]="currentPage === totalPages()">Next</button>
+  </div>
+</div> 

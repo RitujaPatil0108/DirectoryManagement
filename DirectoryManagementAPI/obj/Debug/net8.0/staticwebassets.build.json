@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "vmkY7FV54NYmtqsTq5lpQZ+atTPW9YmwJhcuPG+jgNc=",
+  "Source": "DirectoryManagementAPI",
+  "BasePath": "_content/DirectoryManagementAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
