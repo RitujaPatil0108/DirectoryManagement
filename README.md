@@ -6,6 +6,8 @@ DirectoryManagementAPI/ – .NET Core backend for managing business listings.
 DirectoryManagementFrontend/ – Angular frontend for user interaction.
 
 To view project: https://drive.google.com/file/d/1Sek9DiYcoZ60DH2WJspP0zHzAZoRnMeU/view?usp=sharing
+![image](https://github.com/user-attachments/assets/351b4df2-e795-4098-a13c-9a6a81cc7f91)
+
 
 Setup Instructions
 Backend (DirectoryManagementAPI)
