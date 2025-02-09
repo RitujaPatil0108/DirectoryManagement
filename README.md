@@ -5,6 +5,8 @@ DirectoryManagement is a business listing management system with search, paginat
 DirectoryManagementAPI/ – .NET Core backend for managing business listings.
 DirectoryManagementFrontend/ – Angular frontend for user interaction.
 
+To view project: https://drive.google.com/file/d/1Sek9DiYcoZ60DH2WJspP0zHzAZoRnMeU/view?usp=sharing
+
 Setup Instructions
 Backend (DirectoryManagementAPI)
 dotnet restore
